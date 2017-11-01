@@ -1,11 +1,5 @@
 #include "stdafx.h"
-
-#include "AimpHTTP.h"
-#include "AIMPSoundcloud.h"
-#include "AIMPString.h"
-#include "Tools.h"
-
-#include "SDK/apiFileManager.h"
+#include "Headers.h"
 
 bool AimpHTTP::m_initialized = false;
 IAIMPServiceHTTPClient *AimpHTTP::m_httpClient = nullptr;

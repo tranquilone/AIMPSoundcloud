@@ -36,9 +36,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Properties.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Properties.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -59,6 +61,8 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AIMPSOUNDCLOUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)SDK\aimp_sdk_$(AIMP_SDK)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -78,6 +82,8 @@
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)SDK\aimp_sdk_$(AIMP_SDK)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -91,15 +97,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AddURLDialog.h" />
+    <ClInclude Include="AimpApi.h" />
     <ClInclude Include="AimpHTTP.h" />
     <ClInclude Include="AimpMenu.h" />
     <ClInclude Include="AIMPSoundcloud.h" />
     <ClInclude Include="AIMPString.h" />
     <ClInclude Include="ArtworkProvider.h" />
+    <ClInclude Include="Common.h" />
     <ClInclude Include="ExclusionsDialog.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="GdiPlusImageLoader.h" />
     <ClInclude Include="Config.h" />
+    <ClInclude Include="Headers.h" />
     <ClInclude Include="IUnknownInterfaceImpl.h" />
     <ClInclude Include="MessageHook.h" />
     <ClInclude Include="OptionsDialog.h" />
@@ -145,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AIMPSoundcloud.def" />
+    <None Include="Properties.props" />
     <None Include="Resources\connect_status.html" />
   </ItemGroup>
   <ItemGroup>

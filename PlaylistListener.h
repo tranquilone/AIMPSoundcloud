@@ -1,8 +1,5 @@
 #pragma once
 
-#include "SDK/apiPlaylists.h"
-#include "IUnknownInterfaceImpl.h"
-
 class PlaylistListener : public IUnknownInterfaceImpl<IAIMPExtensionPlaylistManagerListener> {
 public:
     virtual HRESULT WINAPI QueryInterface(REFIID riid, LPVOID* ppvObj) {

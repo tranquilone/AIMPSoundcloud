@@ -1,8 +1,5 @@
 #include "stdafx.h"
-#include "AimpMenu.h"
-
-#include "AIMPString.h"
-#include "SDK/apiMenu.h"
+#include "Headers.h"
 
 IAIMPCore *AimpMenu::m_core = nullptr;
 IAIMPServiceMenuManager *AimpMenu::m_menuManager = nullptr;

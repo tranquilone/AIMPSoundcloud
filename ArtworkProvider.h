@@ -1,9 +1,5 @@
 #pragma once
 
-#include "IUnknownInterfaceImpl.h"
-#include "SDK/apiAlbumArt.h"
-#include "Tools.h"
-
 class ArtworkProvider : public IUnknownInterfaceImpl<IAIMPExtensionAlbumArtProvider2> {
     virtual HRESULT WINAPI QueryInterface(REFIID riid, LPVOID *ppvObj) {
         if (!ppvObj) return E_POINTER;

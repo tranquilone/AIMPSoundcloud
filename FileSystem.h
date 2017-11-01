@@ -1,13 +1,5 @@
 #pragma once
 
-#include "SDK/apiInternet.h"
-#include "SDK/apiFileManager.h"
-#include "AIMPString.h"
-#include "Tools.h"
-#include "IUnknownInterfaceImpl.h"
-#include <mutex>
-#include <condition_variable>
-
 class FileSystem : public IUnknownInterfaceImpl<IAIMPExtensionFileSystem>, 
                    public IAIMPFileSystemCommandDropSource, 
                    public IAIMPFileSystemCommandOpenFileFolder, 

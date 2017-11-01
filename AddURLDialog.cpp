@@ -1,10 +1,5 @@
 #include "stdafx.h"
-#include "AddURLDialog.h"
-#include "resource.h"
-#include "Tools.h"
-#include "SoundCloudAPI.h"
-#include "AIMPSoundcloud.h"
-#include "GdiPlusImageLoader.h"
+#include "Headers.h"
 
 extern HINSTANCE g_hInst;
 

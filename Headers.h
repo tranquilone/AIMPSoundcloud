@@ -1,0 +1,26 @@
+#pragma once
+#include "Common.h"
+#include "AimpApi.h"
+
+#include "IUnknownInterfaceImpl.h"
+#include "AIMPString.h"
+#include "AddURLDialog.h"
+#include "AimpHTTP.h"
+#include "AimpMenu.h"
+#include "Config.h"
+#include "AIMPSoundcloud.h"
+#include "ArtworkProvider.h"
+#include "ExclusionsDialog.h"
+#include "FileSystem.h"
+#include "GdiPlusImageLoader.h"
+#include "MessageHook.h"
+#include "OptionsDialog.h"
+#include "PlayerHook.h"
+#include "PlaylistListener.h"
+#include "resource.h"
+#include "SoundCloudAPI.h"
+#include "TcpServer.h"
+#include "Timer.h"
+#include "Tools.h"
+
+

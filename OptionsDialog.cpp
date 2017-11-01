@@ -1,14 +1,5 @@
 #include "stdafx.h"
-#include "OptionsDialog.h"
-#include "AIMPString.h"
-#include "resource.h"
-#include "TcpServer.h"
-#include "AimpHTTP.h"
-#include "Tools.h"
-#include "rapidjson/document.h"
-#include "AIMPSoundcloud.h"
-#include "ExclusionsDialog.h"
-#include "GdiPlusImageLoader.h"
+#include "Headers.h"
 
 
 #define WM_SET_MY_FOCUS WM_USER + 1

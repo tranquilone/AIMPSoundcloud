@@ -1,8 +1,5 @@
 #pragma once
 
-#include "SDK/apiMessages.h"
-#include "IUnknownInterfaceImpl.h"
-
 class Plugin;
 
 class MessageHook : public IUnknownInterfaceImpl<IAIMPMessageHook> {

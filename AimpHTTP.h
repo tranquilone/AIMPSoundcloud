@@ -1,10 +1,5 @@
 #pragma once
 
-#include "SDK/apiInternet.h"
-#include "IUnknownInterfaceImpl.h"
-#include <functional>
-#include <set>
-
 class AimpHTTP {
     typedef std::function<void(unsigned char *, int)> CallbackFunc;
 

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <windows.h>
-
 class ExclusionsDialog {
 public:
     static void Show(HWND parent = nullptr);

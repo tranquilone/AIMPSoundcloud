@@ -1,8 +1,5 @@
 #include "stdafx.h"
-#include "PlaylistListener.h"
-#include "Config.h"
-#include "AIMPSoundcloud.h"
-
+#include "Headers.h"
 
 void WINAPI PlaylistListener::PlaylistActivated(IAIMPPlaylist *Playlist) {
 

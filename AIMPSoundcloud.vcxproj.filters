@@ -78,6 +78,15 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AimpApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AIMPSoundcloud.cpp">
@@ -145,6 +154,7 @@
     <None Include="Resources\connect_status.html">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Properties.props" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="AIMPSoundcloud.rc">

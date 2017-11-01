@@ -1,12 +1,5 @@
 #pragma once
 
-#include "rapidjson/document.h"
-#include <queue>
-#include <unordered_set>
-#include <cstdint>
-#include <functional>
-#include <memory>
-
 class IAIMPPlaylist;
 class IAIMPPlaylistItem;
 

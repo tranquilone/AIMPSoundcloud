@@ -1,11 +1,5 @@
 #include "stdafx.h"
-#include "MessageHook.h"
-
-#include "Tools.h"
-#include "SDK/apiPlaylists.h"
-#include "SDK/apiPlayer.h"
-#include "AIMPSoundcloud.h"
-#include "SoundCloudAPI.h"
+#include "Headers.h"
 
 MessageHook::MessageHook(Plugin *pl) : m_plugin(pl) {
     

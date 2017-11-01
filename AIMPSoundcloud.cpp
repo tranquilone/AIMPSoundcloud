@@ -1,19 +1,5 @@
 #include "stdafx.h"
-#include "AIMPSoundcloud.h"
-
-#include "AIMPString.h"
-#include "SDK/apiPlayer.h"
-#include "Timer.h"
-#include "PlaylistListener.h"
-#include "AddURLDialog.h"
-#include "Tools.h"
-#include "AimpHTTP.h"
-#include "SoundCloudAPI.h"
-#include "AimpMenu.h"
-#include "resource.h"
-#include "FileSystem.h"
-#include "ArtworkProvider.h"
-#include "PlayerHook.h"
+#include "Headers.h"
 
 
 HRESULT __declspec(dllexport) WINAPI AIMPPluginGetHeader(IAIMPPlugin **Header) {

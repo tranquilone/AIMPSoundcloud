@@ -1,7 +1,5 @@
 #include "stdafx.h"
-#include "PlayerHook.h"
-#include "Tools.h"
-#include "Config.h"
+#include "Headers.h"
 
 HRESULT WINAPI PlayerHook::OnCheckURL(IAIMPString *URL, BOOL *Handled) {
     if (wcsstr(URL->GetData(), L"soundcloud://") == 0 && wcsstr(URL->GetData(), L"soundcloud.com") == 0)

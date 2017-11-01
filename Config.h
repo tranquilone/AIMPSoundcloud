@@ -1,15 +1,5 @@
 #pragma once
 
-#include <string>
-#include <unordered_set>
-#include <unordered_map>
-#include <vector>
-#include "SDK/apiCore.h"
-#include <cstdint>
-#include "rapidjson/document.h"
-#include "rapidjson/prettywriter.h"
-#include "rapidjson/filewritestream.h"
-
 #define CLIENT_ID        "7ab49ecff90c309cd51cab81c1f5baed"
 #define STREAM_CLIENT_ID "02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea"
 #define CLIENT_SECRET    "7a4d4f50405fdf80e5446d319c14c6fa"

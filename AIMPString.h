@@ -1,12 +1,5 @@
 #pragma once
 
-#include "IUnknownInterfaceImpl.h"
-#include <string>
-
-#include "SDK/apiCore.h"
-#include "SDK/apiObjects.h"
-#include "rapidjson/document.h"
-
 class AIMPString {
 public:
     AIMPString();

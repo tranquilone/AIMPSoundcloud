@@ -1,7 +1,5 @@
 #include "stdafx.h"
-#include "TcpServer.h"
-
-#pragma comment(lib,"ws2_32.lib")
+#include "Headers.h"
 
 TcpServer::TcpServer(int port, RequestFunc callback) : m_port(port), m_callback(callback), m_deleteOnFinish(true) {
 

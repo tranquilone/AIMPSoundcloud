@@ -1,9 +1,5 @@
 #pragma once
 
-#include <windows.h>
-#include <functional>
-#include <map>
-
 class Timer {
     typedef std::function<void()> Callback;
 public:

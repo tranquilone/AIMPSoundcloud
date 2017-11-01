@@ -1,7 +1,5 @@
 #pragma once
 
-#include <gdiplus.h>
-
 extern HINSTANCE g_hInst;
 
 class GdiPlusImageLoader {

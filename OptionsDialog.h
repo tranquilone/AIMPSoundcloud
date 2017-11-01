@@ -1,11 +1,5 @@
 #pragma once
 
-#include <windows.h>
-#include <functional>
-#include <cinttypes>
-#include "IUnknownInterfaceImpl.h"
-#include "SDK/apiOptions.h"
-
 class Plugin;
 
 class OptionsDialog : public IUnknownInterfaceImpl<IAIMPOptionsDialogFrame>, public IAIMPOptionsDialogFrameKeyboardHelper {

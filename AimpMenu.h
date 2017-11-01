@@ -1,10 +1,5 @@
 #pragma once
 
-#include "SDK/apiCore.h"
-#include "SDK/apiMenu.h"
-#include "IUnknownInterfaceImpl.h"
-#include <functional>
-
 class AimpMenu {
     typedef std::function<void(IAIMPMenuItem *)> CallbackFunc;
 

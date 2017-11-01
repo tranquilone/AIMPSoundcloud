@@ -1,17 +1,5 @@
 #pragma once
 
-#include "SDK/apiPlugin.h"
-#include "SDK/apiPlaylists.h"
-#include "SDK/apiMessages.h"
-#include "SDK/apiMUI.h"
-#include "OptionsDialog.h"
-#include "Config.h"
-#include "MessageHook.h"
-#include <queue>
-
-#include <gdiplus.h>
-#pragma comment(lib, "gdiplus.lib")
-
 extern HINSTANCE g_hInst;
 
 class IAIMPFileInfo;

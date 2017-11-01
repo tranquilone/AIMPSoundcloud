@@ -1,17 +1,5 @@
 #include "stdafx.h"
-#include "Config.h"
-
-#include "AIMPString.h"
-#include "AIMPSoundcloud.h"
-#include <ShlObj.h>
-#include "SDK/apiCore.h"
-#include "AimpHTTP.h"
-#include "Tools.h"
-#include "rapidjson/document.h"
-#include "rapidjson/stringbuffer.h"
-#include "rapidjson/prettywriter.h"
-#include "rapidjson/filereadstream.h"
-#include "rapidjson/filewritestream.h"
+#include "Headers.h"
 
 IAIMPConfig *Config::m_config = nullptr;
 std::wstring Config::m_configFolder;
