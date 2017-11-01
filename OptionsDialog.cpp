@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "OptionsDialog.h"
 #include "AIMPString.h"
 #include "resource.h"
@@ -7,14 +8,8 @@
 #include "rapidjson/document.h"
 #include "AIMPSoundcloud.h"
 #include "ExclusionsDialog.h"
-#include <Shellapi.h>
-
-#include <Commctrl.h>
-#pragma comment(lib, "Comctl32.lib")
-#pragma comment(lib, "Msimg32.lib")
-
-#include <gdiplus.h>
 #include "GdiPlusImageLoader.h"
+
 
 #define WM_SET_MY_FOCUS WM_USER + 1
 #define WM_UPDATESIZE   WM_USER + 2

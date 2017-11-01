@@ -1,13 +1,11 @@
+#include "stdafx.h"
 #include "ExclusionsDialog.h"
 #include "resource.h"
 #include "Tools.h"
 #include "SoundCloudAPI.h"
-#include "GdiPlusImageLoader.h"
 #include "AIMPSoundcloud.h"
 #include "OptionsDialog.h"
-#include <Commctrl.h>
-#include <unordered_map>
-#include <memory>
+#include "GdiPlusImageLoader.h"
 
 typedef __declspec(dllimport) HRESULT(__stdcall *SetWindowThemeFuncPtr)(HWND hwnd, LPCWSTR pszSubAppName, LPCWSTR pszSubIdList);
 HRESULT SetExplorerTheme(HWND hwnd) {

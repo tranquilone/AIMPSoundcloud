@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "SoundCloudAPI.h"
 
 #include "AIMPSoundcloud.h"
@@ -6,9 +7,6 @@
 #include "SDK/apiPlaylists.h"
 #include "AIMPString.h"
 #include "Tools.h"
-#include <Strsafe.h>
-#include <string>
-#include <set>
 
 void SoundCloudAPI::AddFromJson(IAIMPPlaylist *playlist, const rapidjson::Value &d, std::shared_ptr<LoadingState> state) {
     if (!playlist || !state || !Plugin::instance()->core())

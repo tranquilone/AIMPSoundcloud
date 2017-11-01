@@ -1,5 +1,5 @@
+#include "stdafx.h"
 #include "ArtworkProvider.h"
-#include <string>
 #include "AimpHTTP.h"
 
 HRESULT WINAPI ArtworkProvider::Get2(IAIMPFileInfo *FileInfo, IAIMPPropertyList *Options, IAIMPImageContainer **Image) {

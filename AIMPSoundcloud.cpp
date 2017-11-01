@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "AIMPSoundcloud.h"
 
 #include "AIMPString.h"
@@ -13,7 +14,7 @@
 #include "FileSystem.h"
 #include "ArtworkProvider.h"
 #include "PlayerHook.h"
-#include <set>
+
 
 HRESULT __declspec(dllexport) WINAPI AIMPPluginGetHeader(IAIMPPlugin **Header) {
     *Header = Plugin::instance();

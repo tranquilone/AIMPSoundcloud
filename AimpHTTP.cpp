@@ -1,12 +1,10 @@
-#include <WinSock2.h>
-#include <WS2tcpip.h>
-#include <Windows.h>
+#include "stdafx.h"
 
 #include "AimpHTTP.h"
 #include "AIMPSoundcloud.h"
 #include "AIMPString.h"
 #include "Tools.h"
-#include <process.h>
+
 #include "SDK/apiFileManager.h"
 
 bool AimpHTTP::m_initialized = false;

@@ -1,8 +1,7 @@
+#include "stdafx.h"
 #include "FileSystem.h"
 #include "Config.h"
 #include "AIMPSoundcloud.h"
-#include <algorithm>
-#include <windows.h>
 
 HRESULT WINAPI FileSystem::HTTPStream::SetSize(const INT64 Value) {
     m_size = Value;

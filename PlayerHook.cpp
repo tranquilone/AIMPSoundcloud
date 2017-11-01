@@ -1,5 +1,5 @@
+#include "stdafx.h"
 #include "PlayerHook.h"
-#include <string>
 #include "Tools.h"
 #include "Config.h"
 

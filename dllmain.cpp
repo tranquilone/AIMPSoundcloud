@@ -1,4 +1,4 @@
-#include <windows.h>
+#include "stdafx.h"
 
 HINSTANCE g_hInst = 0;
 

@@ -1,10 +1,5 @@
+#include "stdafx.h"
 #include "Tools.h"
-
-#include <windows.h>
-#include <locale>
-#include <sstream>
-#include <iomanip>
-#include <codecvt>
 
 static std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> wStrConverter;
 

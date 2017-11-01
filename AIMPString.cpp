@@ -1,5 +1,5 @@
+#include "stdafx.h"
 #include "AIMPString.h"
-#include <codecvt>
 
 IAIMPCore *AIMPString::m_core = nullptr;
 static std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> wStrConverter;
