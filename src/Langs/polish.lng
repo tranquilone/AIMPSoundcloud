@@ -1,0 +1,58 @@
+﻿[FILE]
+Author=Eddy
+Name=Polish (PL)
+VersionID=0
+LangId=1045
+
+[SoundCloud]
+ConnectStatusOK=Autoryzacja pomyślna|Możesz teraz zamknąć to okno i wrócić do AIMPa.
+ConnectStatusError=Wystąpił błąd|Nie udało się połączyć z kontem SoundCloud. Wróć do AIMPa i spróbuj ponownie.
+Likes=SoundCloud - Ulubione| - moje polubienia
+Stream=SoundCloud - Tablica| - moja tablica
+Recommended=Proponowane dla 
+Prefix=SoundCloud - 
+
+[SoundCloud.Messages]
+Error=Błąd
+CantResolve=Nie udało się wczytać tego adresu.
+
+[SoundCloud.Menu]
+Repost=Repostuj
+AddURL=SoundCloud URL
+MyTracksAndPlaylists=Moje utwory i playlisty
+MyStream=SoundCloud - tablica
+MyLikes=SoundCloud - ulubione
+LoadRecommendations=Wczytaj proponowane|Tutaj|Utwórz nową playlistę
+OpenInBrowser=Otwórz w przeglądarce
+AddToExclusions=Dodaj do wyjątków
+LikeUnlike=Polub / Odlub|Polub|Odlub
+CheckForNewItems=Sprawdź czy są nowe utwory
+
+[SoundCloud.AddURL]
+Title=Dodaj adres SoundCloud
+URL=Adres SoundCloud 
+CreateNew=Utwórz nową playlistę
+OK=OK
+PlaylistName=Nazwa playlisty (opcjonalnie)
+
+[SoundCloud.Options]
+Title=SoundCloud
+Account=Konto SoundCloud
+ConnectButton=Zaloguj się|Wyloguj się
+General=Ogólne
+AddDurationToTitle=Dodaj czas trwania do tytułu utworu
+AddUsernameToTitle=Dodaj nazwę użytkownika do tytułu utworu
+LimitUserStream=Limituj tablicę użytkownika|utworów
+MonitorURLs=Monitoruj dodane adresy
+MonitorLikes=Monitoruj ulubione
+MonitorStream=Monitoruj tablicę
+CheckAtStartup=Sprawdzaj czy są nowe utwory przy starcie AIMPa
+CheckEvery=Sprawdzaj nowe utwory co|godzin
+
+[SoundCloud.Exclusions]
+Title=Wykluczenia utworów
+Header=Zarządzaj wykluczeniami
+ListHeader=Nazwa utworu|Czas trwania
+Remove=Usuń z wykluczeń
+RemoveAndAddToPlaylist=Usuń z wykluczeń i dodaj do playlisty
+OK=OK

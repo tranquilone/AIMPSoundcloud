@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06417ABC-21CB-4A50-9335-5A8BCF890BC4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AIMPSoundcloud</RootNamespace>
+    <ProjectName>AIMPSoundcloud</ProjectName>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Properties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Properties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <TargetName>aimp_SoundCloud</TargetName>
+    <IntDir>$(SolutionDir)..\bin\intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>aimp_SoundCloud</TargetName>
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AIMPSOUNDCLOUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ThirdParty\aimp_sdk_$(AIMP_SDK)\;$(ProjectDir)..\ThirdParty\;$(ProjectDir)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>AIMPSoundcloud.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutputPath)$(TargetFileName)" "$(ProgramFiles)\AIMP3\Plugins\aimp_SoundCloud\$(TargetFileName)" /H /Y /C /R /S
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AIMPSOUNDCLOUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ThirdParty\aimp_sdk_$(AIMP_SDK)\;$(ProjectDir)..\ThirdParty\;$(ProjectDir)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>AIMPSoundcloud.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>D:\Programy\Microsoft Visual Studio 12.0\VC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AddURLDialog.h" />
+    <ClInclude Include="include\AimpApi\AimpSdk.h" />
+    <ClInclude Include="AimpHTTP.h" />
+    <ClInclude Include="AimpMenu.h" />
+    <ClInclude Include="AIMPSoundcloud.h" />
+    <ClInclude Include="ArtworkProvider.h" />
+    <ClInclude Include="include\AimpApi\AimpString.h" />
+    <ClInclude Include="include\Common.h" />
+    <ClInclude Include="include\AimpApi\AimpCore.h" />
+    <ClInclude Include="ExclusionsDialog.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="GdiPlusImageLoader.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="include\AimpApi\AimpObject.h" />
+    <ClInclude Include="include\Headers.h" />
+    <ClInclude Include="IUnknownInterfaceImpl.h" />
+    <ClInclude Include="MessageHook.h" />
+    <ClInclude Include="OptionsDialog.h" />
+    <ClInclude Include="PlayerHook.h" />
+    <ClInclude Include="PlaylistListener.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SoundCloudAPI.h" />
+    <ClInclude Include="include\stdafx.h" />
+    <ClInclude Include="TcpServer.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Tools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\AddURLDialog.cpp" />
+    <ClCompile Include="source\AimpApi\AimpString.cpp" />
+    <ClCompile Include="source\AimpHTTP.cpp" />
+    <ClCompile Include="source\AimpMenu.cpp" />
+    <ClCompile Include="source\AIMPSoundcloud.cpp" />
+    <ClCompile Include="source\AIMPString.cpp" />
+    <ClCompile Include="source\ArtworkProvider.cpp" />
+    <ClCompile Include="source\Config.cpp" />
+    <ClCompile Include="source\AimpCore.cpp" />
+    <ClCompile Include="source\dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\ExclusionsDialog.cpp" />
+    <ClCompile Include="source\FileSystem.cpp" />
+    <ClCompile Include="source\MessageHook.cpp" />
+    <ClCompile Include="source\OptionsDialog.cpp" />
+    <ClCompile Include="source\PlayerHook.cpp" />
+    <ClCompile Include="source\PlaylistListener.cpp" />
+    <ClCompile Include="source\SoundCloudAPI.cpp" />
+    <ClCompile Include="source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\TcpServer.cpp" />
+    <ClCompile Include="source\Timer.cpp" />
+    <ClCompile Include="source\Tools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AIMPSoundcloud.def" />
+    <None Include="Properties.props" />
+    <None Include="Resources\connect_status.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AIMPSoundcloud.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\icon.png" />
+    <Image Include="Resources\orange_logo.png" />
+    <Image Include="Resources\white_logo.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
