@@ -103,6 +103,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AddURLDialog.h" />
+    <ClInclude Include="include\AimpApi\AimpPlugin.h" />
     <ClInclude Include="include\AimpApi\AimpSdk.h" />
     <ClInclude Include="AimpHTTP.h" />
     <ClInclude Include="AimpMenu.h" />

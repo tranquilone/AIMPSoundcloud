@@ -96,6 +96,9 @@
     <ClInclude Include="include\AimpApi\AimpCore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\AimpApi\AimpPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\TcpServer.cpp">
