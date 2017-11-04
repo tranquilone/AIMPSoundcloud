@@ -59,8 +59,14 @@ void SoundCloudAPI::AddFromJson(IAIMPPlaylist *playlist, const rapidjson::Value 
             if (item.HasMember("stream_url")) 
                 stream_url = Tools::ToWString(item["stream_url"]);
 
-            if (stream_url.empty())
-                stream_url = L"https://api.soundcloud.com/tracks/" + std::to_wstring(trackId) + L"/stream";
+            if (stream_url.empty()) {              
+              stream_url = L"https://api.soundcloud.com/tracks/" + std::to_wstring(trackId) + L"/stream";              
+            }
+            
+            stream_url += "?client_id=" TEXT(STREAM_CLIENT_ID);
+
+            if (Plugin::instance()->isConnected())
+              stream_url += L"&oauth_token=" + Plugin::instance()->getAccessToken();
 
             std::wstring filename(L"soundcloud://");
             filename += std::to_wstring(trackId) + L"/";

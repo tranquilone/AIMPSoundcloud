@@ -81,8 +81,9 @@ HRESULT WINAPI FileSystem::GetValueAsInt32(int PropertyID, int *Value) {
 HRESULT WINAPI FileSystem::GetValueAsObject(int PropertyID, REFIID IID, void **Value) {
     if (PropertyID == AIMP_FILESYSTEM_PROPID_SCHEME) {
         static AIMPString name(L"soundcloud");
-        name->AddRef();
-        *Value = name;
+        IAIMPString* native = name;
+        native->AddRef();
+        *Value = native;
         return S_OK;
     } else {
         return E_INVALIDARG;

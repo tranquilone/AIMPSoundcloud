@@ -14,8 +14,9 @@ HRESULT WINAPI Plugin::Initialize(IAIMPCore *Core) {
     if (Gdiplus::GdiplusStartup(&m_gdiplusToken, &gdiplusStartupInput, NULL) != Gdiplus::Status::Ok)
         return E_FAIL;
 
+    CoreFactory::Instance().Init(Core);
+
     m_core = Core;
-    AIMPString::Init(Core);
 
     if (FAILED(m_core->QueryInterface(IID_IAIMPServiceMUI, reinterpret_cast<void **>(&m_muiService)))) {
         Finalize();

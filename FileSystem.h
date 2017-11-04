@@ -104,6 +104,7 @@ public:
     virtual HRESULT WINAPI CreateStream(IAIMPString *FileName, IAIMPStream **Stream);
 
     virtual HRESULT WINAPI IAIMPFileSystemCommandOpenFileFolder::CanProcess(IAIMPString *FileName) {
+      auto test = FileName->GetData();
         return S_OK;
     }
     virtual HRESULT WINAPI IAIMPFileSystemCommandOpenFileFolder::Process(IAIMPString *FileName);

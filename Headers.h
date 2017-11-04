@@ -2,6 +2,7 @@
 #include "Common.h"
 #include "AimpApi.h"
 
+#include "CoreFactory.h"
 #include "IUnknownInterfaceImpl.h"
 #include "AIMPString.h"
 #include "AddURLDialog.h"
